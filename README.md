@@ -3,8 +3,8 @@ protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/addressbook.proto
 
 protoc -I=. --java_out=. addressbook.proto
 
-How to Compile Protobuf java_out
-COMPILE PROTOBUF-JAVA.JAR
+# How to Compile Protobuf java_out
+# COMPILE PROTOBUF-JAVA.JAR
 1. Install Apache Maven if you dont have it: http://maven.apache.org/
 
 2. Set maven environment variables
@@ -21,11 +21,11 @@ COMPILE PROTOBUF-JAVA.JAR
 
 8. mvn package
 
-COMPILE ADDRESSBOOK.PROTO 
+# COMPILE ADDRESSBOOK.PROTO 
 9. protoc -I=$SRC_DIR --java_out=$DST_DIR $PROTO_DIR/addressbook.proto
 protoc -I=. --java_out=. addressbook.proto
 
-COMPILE JAVA CLASSES
+# COMPILE JAVA CLASSES
 10. First copy protobuf-java-3.5.1.jar to the java files directory
 
 11. javac AddPerson.java ListPeople.java com/example/tutorial/AddressBookProtos.java -cp protobuf-java-3.5.1.jar
